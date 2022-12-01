@@ -1,12 +1,11 @@
-#include <iostream>
 #include "lib.h"
-using namespace std;
 
-int main(){
-    int numero;
-    cin>>numero;
-    if (funzione(numero,2)==1)
-        cout<<"numero primo";
-    else cout<<"numero non primo";
-    return 0;
+int funzione(int a, int i){
+    if (a%i==0){
+        if (a==i)
+            return 1;
+        else
+            return 0;}
+    else
+        funzione(a, i+1);
 }
